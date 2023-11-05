@@ -1339,3 +1339,111 @@ input[type="text"] {
 }
 
 /* You can add more styles as needed */
+
+
+/* Style for the custom slideshow box */
+.custom-slideshow-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Stack items vertically */
+    height: 70vh; /* Adjust the height as needed for your design */
+    background-color: #f2f2f2; /* Set a background color for the box */
+    border: 2px solid #ccc; /* Add a border to the box */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* Add a box shadow */
+}
+
+/* Style for the custom slideshow container */
+.custom-slideshow-container {
+    max-width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Style for the custom slide */
+.custom-slide {
+    display: none;
+    width: 100%;
+    text-align: center;
+    position: relative;
+}
+
+.custom-slide img {
+    width: 100%; /* Set the maximum width of the images */
+    height: auto; /* Maintain the aspect ratio */
+}
+
+/* Style for the title section */
+.custom-title {
+    background-color: #333;
+    color: #fff;
+    padding: 8px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Navigation arrows */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+/* You can add more styles as needed */
+
+
+.my-projects-section {
+    background-color: #f2f2f2;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.my-projects-section h2 {
+    font-size: 24px;
+}
+
+.my-project {
+    background-color: #fff;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.my-project h3 {
+    font-size: 20px;
+    margin: 0;
+}
+
+.my-project-date {
+    font-size: 16px;
+    color: #777;
+}
+
+.my-project-description {
+    font-size: 18px;
+}
+
+.my-project a {
+    display: block;
+    text-align: center;
+    background-color: #0077B5;
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.my-project a:hover {
+    background-color: #005F8D;
+}
