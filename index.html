@@ -357,48 +357,63 @@ A passionate and versatile teenager with a remarkable array of skills and talent
 
   <!-- end trending section -->
 
-    <style>
-    body {
-      margin: 0;
-      padding: 0;
-      background-color: #f7f7f7;
-    }
-    .ctn {
-      max-width: 1200px;
-      margin: 20px auto;
-      padding: 20px;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+<style>
+  .ctn {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .crd {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* Adjusted to accommodate more cards */
+    box-sizing: border-box;
+  }
+  .crd:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    transform: translateY(-4px);
+  }
+  .crd img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  .ttl {
+    margin-top: 0;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  .dsc {
+    margin-bottom: 0;
+    color: #666;
+  }
+
+  /* Responsive Styling */
+  @media only screen and (max-width: 991px) {
     .crd {
-      background-color: #fff;
-      border-radius: 8px;
-      padding: 20px;
-      margin-bottom: 20px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       width: calc(33.33% - 20px);
-      box-sizing: border-box;
     }
-    .crd:hover {
-      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-      transform: translateY(-4px);
+  }
+
+  @media only screen and (max-width: 767px) {
+    .crd {
+      width: calc(50% - 20px);
     }
-    .crd img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
+  }
+
+  @media only screen and (max-width: 479px) {
+    .crd {
+      width: calc(100% - 20px);
     }
-    .ttl {
-      margin-top: 0;
-      font-size: 1.5rem;
-      margin-bottom: 10px;
-    }
-    .dsc {
-      margin-bottom: 0;
-      color: #666;
-    }
-  </style>
+  }
+</style>
+
     <section class="trending_section layout_padding">
     <div id="accordion">
       <div class="container">
@@ -407,23 +422,25 @@ A passionate and versatile teenager with a remarkable array of skills and talent
           <div class="detail-box">
             <div class="heading_container">
               <h2>
-                About Me
+                Featured
               </h2>
 
             </div></div></div></div></div>
   <div class="ctn">
     <div class="crd">
-      <img src="https://via.placeholder.com/600x300" alt="Featured 1"><br>
-      <h3 class="ttl">Featured Title 1</h3>
+    	<a href="https://den-enterprise.github.io/home/">
+      <img src="images/feature1.png" alt="Featured 1"><br>
+      <h3 class="ttl">Company Site</h3>
+      <span class="dsc">I'm here representing my company and showcasing my project works</span></a>
+    </div>
+    <div class="crd">
+      <img src="images/feature2.png" alt="Featured 2">
+      <a href="https://drive.google.com/file/d/18eZIDibzTC8TUzz_008AnjVpxWOZKrPO/view">
+      <h3 class="ttl">Million Dollar Deal - Lecole Chempaka</h3></a>
       <span class="dsc">Description of the featured content goes here.</span>
     </div>
     <div class="crd">
-      <img src="https://via.placeholder.com/600x300" alt="Featured 2">
-      <h3 class="ttl">Featured Title 2</h3>
-      <span class="dsc">Description of the featured content goes here.</span>
-    </div>
-    <div class="crd">
-      <img src="https://via.placeholder.com/600x300" alt="Featured 3">
+      <img src="images/feature3.png" alt="Featured 3">
       <h3 class="ttl">Featured Title 3</h3>
       <span class="dsc">Description of the featured content goes here.</span>
     </div>
